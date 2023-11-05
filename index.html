@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ICICI Bank Job Application</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+      }
+      body input{
+        width: 500px; 
+          padding: 10px;
+          margin: 5px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+      
+      body select{
+          width: 500px; 
+          padding: 10px;
+          margin: 5px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+      
+      .container {
+          max-width: 600px;
+          margin: 50px auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      h1 {
+          text-align: center;
+      }
+      
+      label,
+      input,
+      textarea {
+          display: block;
+          margin-bottom: 10px;
+          width: 100%;
+      }
+      
+      input,
+      textarea {
+          width: 500px; 
+          padding: 10px;
+          margin: 5px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+      </style>
+</head>
+
+<body>
+<center>
+  <img src="icicibanklogo.jpg" alt="ICICI Bank Logo" width="350" height="150" >
+    <h1>ICICI Bank Job Application</h1>
+    <form action="submit_application.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="resume">Resume/CV (PDF or Word):</label> 
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required><br><br>
+
+
+
+
+        <label for="position">Position Applied For:</label>
+        <select id="position" name="position" required>
+            <option value="customer_service">Customer Service</option>
+            <option value="finance">Finance</option>
+            <option value="marketing">Marketing</option>
+            <option value="it">Information Technology</option>
+            <!-- Add more options for different positions -->
+        </select><br><br>
+
+        <label for="cover_letter">Cover Letter:</label><br>
+        <textarea id="cover_letter" name="cover_letter" rows="4" cols="50" required></textarea><br><br>
+
+        <input style="background-color: #F99D27; color: #fff; font-weight: 600; font-size: large;" type="submit" value="Submit Application">
+    </form>
+  </center>
+</body>
+</html>
